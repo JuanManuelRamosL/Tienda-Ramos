@@ -10,11 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.97",
     "amqplib": "^0.10.4",
     "axios": "^1.7.7",
     "body-parser": "^1.20.3",
     "bwip-js": "^4.5.1",
-    "canvas": "^2.11.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
