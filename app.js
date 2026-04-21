@@ -7,7 +7,7 @@ const pagosRouters = require('./routes/pagosRoutes');
 const morgan = require('morgan');
 const cors = require('cors');
 const { connectRabbitMQ } = require('./rabbitmq');
-
+const pedidoRoutes = require('./routes/pedidoRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -24,6 +24,7 @@ app.use(morgan("dev"))
 app.use('/api', productRoutes);
 app.use("/api",userRoutes)
 app.use("/api",pagosRouters)
+app.use('/api', pedidoRoutes);
 
 module.exports = app;
 //db: postgres://neondb_owner:oSJI0Aarsf2q@ep-nameless-frost-a4l1qafn-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
